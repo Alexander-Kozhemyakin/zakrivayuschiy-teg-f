@@ -32,19 +32,19 @@
   flex-direction: column;
   align-items: center;
   max-inline-size: 696px;
-  margin: 102px auto;
+  margin: 102px auto 104px;
   font-family: var(--accent-font-family);
   font-weight: var(--main-font-weight);
   background-color: var(--background-color);
-  border: 2px solid var(--accent-color, #000);
-}
+  outline: 2px solid var(--accent-color, #000);
+} 
 
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   font-weight: 400;
   text-transform: uppercase;
   color: var(--text-color);
-  margin-block-start: 120px;
+  margin-block-start: 136px;
 }
 
 .header__subtitle {
@@ -60,14 +60,15 @@
   font-size: 14px;
   text-transform: uppercase;
   color: var(--text-color);
-  margin-block: 25px;
+  margin-block: 22px;
+  margin-inline-start: 20px;
 }
 
  /* список тем на выбор */
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
 }
 
 .theme-menu__button {
@@ -122,16 +123,17 @@
   margin: auto;
   max-inline-size: 696px;
   background-color: var(--background-color);
-  border: 2px solid var(--accent-color, #000);
+  outline: 2px solid var(--accent-color, #000);
 }
 
 .card:nth-of-type(n + 2) {
-  margin-block-start: 52px;
+  margin-block-start: 57px;
 }
 
 .card__title {
   font-weight: var(--card-font-weight);
   padding: 3px 0 3px 10px;
+  font-size: 18px;
   color: var(--text-color);
   border-bottom: 2px solid var(--accent-color);
 }
@@ -182,7 +184,6 @@
 .card__text {
   font-family: var(--main-font-family);
   font-weight: var(--main-font-weight);
-  /* font-weight: 400; */
   font-size: 18px;
   line-height: 117%;
   color: var(--text-color);
@@ -380,4 +381,30 @@
 
 .filter-invert {
   filter: invert(0.1);
+}
+
+@media (max-width: 376px) {
+  .header {
+    width: calc(100% - 4px);
+  }
+
+  .header__title {
+    margin-block-start: 120px;
+  }
+
+  .card {
+    width: calc(100% - 4px);
+  }
+
+  .card__texts {
+    padding: 25px 28px 25px 25px;
+  }
+
+  .card__title {
+    padding: 5px 0 4px 10px;    ;
+  }
+
+  .card:nth-of-type(n + 2) {
+    margin-block-start: 52px;
+  }
 }
