@@ -1,5 +1,5 @@
 :root {
-  --main-font-family: "Inter", sans-serif;  
+  --main-font-family: "Inter", sans-serif;
   --accent-font-family: "PressStart2P", monospace;
   --main-font-weight: 400;
   --card-font-weight: 700;
@@ -9,7 +9,7 @@
   --page-background-image:
     repeating-linear-gradient(to left,#d3d3d3 0 2px,transparent 2px 4px),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
-    linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%), url("#");
+    linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);  /* , url("#") */
   --text-stoke-color: #fff;
   --like-contour-color: #000;
   --like-fill-color: #ff0000;

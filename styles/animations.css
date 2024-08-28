@@ -15,15 +15,15 @@
 @keyframes arrow {
   from {
     transform: translateX(0);
-  }   
+  }
   to {
     transform: translateX(4px);
-  } 
+  }
 }
 /*искры сердца*/
 .sparks {
     opacity: 0;
-  }
+}
   
 .like-icon .heart {
     transform-origin: center;

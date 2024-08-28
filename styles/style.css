@@ -18,7 +18,7 @@
   min-block-size: 100dvb;
   margin: auto;
   font-family: var(--main-font-family);
-  font-variation-settings: var(--main-font-weight);
+  font-variation-settings: "wgt" var(--main-font-weight);
   background-color: var(--background-color);
   background-attachment: fixed;
   background-size: cover;
